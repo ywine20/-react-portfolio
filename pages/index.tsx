@@ -51,17 +51,6 @@ export default function Home() {
         }
     };
 
-    const handleOnChange = (e) => {
-        e.persist();
-        setInputs((prev) => ({
-            ...prev,
-            [e.target.id]: e.target.value,
-        }));
-        setStatus({
-            submitted: false,
-            submitting: false,
-            info: { error: false, msg: null },
-        });
     };
 
     const handleOnSubmit = async (e) => {
